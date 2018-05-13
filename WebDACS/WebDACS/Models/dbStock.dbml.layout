@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.625" name="dbStock">
+  <DataContextMoniker Name="/dbStockDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2d5eb85f-3c1f-46f3-9c99-88093b8ed727" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/dbStockDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d745666-512d-48c1-b1d3-051000bdc7fe" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9067fa3e-abef-426a-bb56-cd33b918ce27" absoluteBounds="0.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbStockDataContext/CHITIETDONTHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92b4fdb3-97f6-4ad3-9596-abf9dd275d18" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac017100-87ad-4f01-a373-60d4203cf5cc" absoluteBounds="0.75, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbStockDataContext/CHUDE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d06d198-fb8b-4e7d-950d-35127506bce8" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54cf6cc8-062e-482d-a21c-59ee8b2390f1" absoluteBounds="6.5, 5.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/dbStockDataContext/DONDATHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28edd796-3705-430b-84d7-503f9e602cdf" absoluteBounds="6.515, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98b37fbc-4505-432c-b404-23027b822f99" absoluteBounds="3.75, 5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/dbStockDataContext/NGUOIDUNG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a23e6f8f-54f9-4372-9026-a87c228d016e" absoluteBounds="3.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c54e2128-b156-4114-8b0d-335a6c63742f" absoluteBounds="3.5, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbStockDataContext/STOCK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="534243f6-edbc-4737-a4eb-cc1dab242ed6" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="475030cb-232e-4146-8d0b-72992a61b895" absoluteBounds="0.75, 5.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbStockDataContext/TACGIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dd9d3ac-5fac-4fdc-bc81-74698f7d9396" absoluteBounds="0.765, 5.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 6.10659912109375); (6.5 : 6.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbStockDataContext/NGUOIDUNG/NGUOIDUNG_DONDATHANG" />
+      <nodes>
+        <classShapeMoniker Id="98b37fbc-4505-432c-b404-23027b822f99" />
+        <classShapeMoniker Id="54cf6cc8-062e-482d-a21c-59ee8b2390f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbStockDataContext/CHUDE/CHUDE_STOCK" />
+      <nodes>
+        <classShapeMoniker Id="ac017100-87ad-4f01-a373-60d4203cf5cc" />
+        <classShapeMoniker Id="c54e2128-b156-4114-8b0d-335a6c63742f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.37621330413662); (3.125 : 5.00121330413662); (3.125 : 2.91230139778646); (3.5 : 2.91230139778646)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbStockDataContext/TACGIA/TACGIA_STOCK" />
+      <nodes>
+        <classShapeMoniker Id="475030cb-232e-4146-8d0b-72992a61b895" />
+        <classShapeMoniker Id="c54e2128-b156-4114-8b0d-335a6c63742f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
